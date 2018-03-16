@@ -89,6 +89,16 @@ int main(void)
             break;
         }
 
+         pid_t pid = fork();
+        if(pid == -1) {
+            printf("Failed to fork \n");
+        } else if(pid > 0) {
+            int status;
+            waitpid(pid, &status, 0); 
+        } else {
+            execvp(args[0], &args[0]);
+        }
+
         #if DEBUG
 
         // Some debugging output
