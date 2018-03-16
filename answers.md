@@ -1,11 +1,16 @@
 1. List all of the main states a process may be in at any point in time on a standard Unix system. Briefly explain what each of these states mean.  
 
 _answer_ - 
-  a. _Created/New :_ When the process is created it is in the Created or New state.
-  b. _Ready :_ The process has been loaded into memory and is awaiting execution.
-  c. _Running :_ Process has been chosen and is in the process of execution
-  d. _Blocked :_ when a process is not allowed, for a variety of reasons (awaiting user input, for example), to execute. Some sort of external change in state is required before it will be allowed to run again.
-  e. _Terrminated/Exit :_either the process has completed running or it has been killed.
+  a. _Created/New :_ When the process is created it is in the Created or New state.  
+
+  b. _Ready :_ The process has been loaded into memory and is awaiting execution.  
+
+  c. _Running :_ Process has been chosen and is in the process of execution  
+
+  d. _Blocked :_ when a process is not allowed, for a variety of reasons (awaiting user input, for example), to execute. Some sort of external change in state is required before it will be allowed to run again.  
+
+  e. _Terrminated/Exit :_either the process has completed running or it has been killed.  
+  
 
 2. What is a Zombie Process? How does it get created? How does it get destroyed?  
 
